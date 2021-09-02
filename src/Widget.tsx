@@ -5,14 +5,16 @@ export default function Widget () {
   React.useEffect(() => {
     console.log('hooks');
   }, []);
+  const divStyle = {
+    borderRadius: '4px',
+    padding: '2em',
+    backgroundColor: 'purple',
+    color: 'white',
+  }
+
   return (
     <div
-      style={{
-        borderRadius: '4px',
-        padding: '2em',
-        backgroundColor: 'purple',
-        color: 'white',
-      }}
+      style={divStyle}
     >
       <h2>App 3 Widget</h2>
       <p>

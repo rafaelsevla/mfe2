@@ -1,4 +1,4 @@
-const { src, dest, series } = require('gulp');
+const { src, dest } = require('gulp');
 var concat = require('gulp-concat');
 
 
