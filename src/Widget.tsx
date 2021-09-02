@@ -10,7 +10,7 @@ export default function Widget () {
     padding: '2em',
     backgroundColor: 'purple',
     color: 'white',
-  }
+  };
 
   return (
     <div
