@@ -1,5 +1,6 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { ModuleFederationPlugin } = require('webpack').container;
+const TsconfigPathsPlugin = require('tsconfig-paths-webpack-plugin');
 const path = require('path');
 
 module.exports = {
@@ -14,6 +15,11 @@ module.exports = {
   },
   resolve: {
     extensions: [ '.ts', '.tsx', '.js' ],
+    plugins: [
+      new TsconfigPathsPlugin({
+        extensions: ['.js', '.jsx', '.json', '.ts', '.tsx']
+      })
+    ],
   },
   module: {
     rules: [
