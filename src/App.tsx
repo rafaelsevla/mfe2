@@ -21,7 +21,7 @@ const App = () => {
       <h2>App 3</h2>
       {lalalala()}
       {lalal()}
-      <Button onClick={e => console.log(e)}>
+      <Button onClick={(e) => console.log(e)}>
         {blaBla}
       </Button>
     </div>
